@@ -5,7 +5,7 @@
 
     //Initial backgound image
     let backgroundDraw = new Image();
-    backgroundDraw.src = '../images/fundo_sieski.jpg';
+    backgroundDraw.src = '../images/barracanvas.png';
 
     //pseudo-object
     const canvasBackground = function (Background, Width, Height) {
@@ -33,8 +33,8 @@
     };
 
     //Begin Code
-    const canvasBackImage = new canvasBackground(backgroundDraw, 1450, 780);
-    const infoText = new canvasText(450, 400, "Bem vindo ao canvas", "yellow");
+    const canvasBackImage = new canvasBackground(backgroundDraw, 159, 800);
+    const infoText = new canvasText(450, 400, "BEM VINDO AO CANVAS", "yellow");
 
     window.onload = init();
 
@@ -63,8 +63,10 @@
 
     //DRAW CANVAS
     function draw() {
-        cnv.clearRect(0, 0, 700, 450);
+        cnv.fillStyle = "black";
+        cnv.clearRect(0, 0, 1410, 800);
         canvasBackImage.render();
+        
         infoText.render();
     }
 
