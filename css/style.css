@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .wrapper{
@@ -21,6 +22,8 @@
    }
    
    main{
+    display:flex;
+    flex-direction: column;
     width: 75%;
     height:1000px;
     background-image: url('../images/bckmain.png');
@@ -30,6 +33,46 @@
    aside{
     width: 24%;
     height:1000px;
+    padding: 10px;
     background-image: url('../images/bckside.png');
     border: 2px solid white;
+   }
+
+   .canvas-display{
+    width: 100%;
+    height:800px;
+    background-image: url('../images/bckside.png');
+    border: 2px solid white;
+   }
+
+   footer{
+    width: 99%;
+    height:150px;
+    margin: 10px;
+    background-image: url('../images/bckcontainers.png');
+    border: 2px solid white;
+   }
+
+   .container-display{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    background-image: url('../images/bckcontainers.png');
+    border: 2px solid white;
+   }
+
+   .container-tools{
+    width: 100%;
+    height: 490px;
+    background-image: url('../images/bckcontainers.png');
+    border: 2px solid white;
+    margin-bottom: 10px;
+   }
+
+   .container-socialmedia{
+    width: 100%;
+    height: 146px;
+    background-image: url('../images/bckcontainers.png');
+    border: 2px solid white;
+    margin-bottom: 10px;
    }
