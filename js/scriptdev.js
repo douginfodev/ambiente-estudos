@@ -7,8 +7,19 @@
     let backgroundDraw = new Image();
     backgroundDraw.src = '../images/fundo_sieski.jpg';
 
-   //pseudo-object - DrawText
-    const canvasText = function (positionX,positionY,Text,Color) {
+    //pseudo-object
+    const canvasBackground = function (Background, Width, Height) {
+        this.width = Width;
+        this.height = Height;
+        this.originX = 0;
+        this.originY = 0;
+        this.render = function () {
+            cnv.drawImage(Background, this.originX, this.originY, this.width, this.height);
+        };
+    };
+
+    //pseudo-object - DrawText
+    const canvasText = function (positionX, positionY, Text, Color) {
         this.text = Text;
         this.font = "52px Arial Bold";
         this.color = Color;
@@ -18,24 +29,13 @@
             cnv.font = this.font;
             cnv.fillStyle = this.color;
             cnv.fillText(this.text, this.originX, this.originY);
-    };
-};
-
-    //pseudo-object
-    const canvasBackground = function (Background, Width, Height) {
-        this.width = Width;
-        this.height = Height;
-        this.originX = 0;
-        this.originY = 0;
-        this.render = function () {            
-            cnv.drawImage(Background, this.originX, this.originY, this.width, this.height);
         };
     };
 
     //Begin Code
     const canvasBackImage = new canvasBackground(backgroundDraw, 1450, 780);
-    const infoText = new canvasText(450, 400,"Bem vindo ao canvas" ,"yellow");
-    
+    const infoText = new canvasText(450, 400, "Bem vindo ao canvas", "yellow");
+
     window.onload = init();
 
     //Link html canvas element

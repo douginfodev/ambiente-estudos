@@ -1,6 +1,6 @@
 (function () {
   //Variables
-  var ctx; //context
+  var ctx;  //context
   var cnv;  //canvas
   var status = null;
 
@@ -12,7 +12,7 @@
   var originX = 200;
   var originY = 12;
   var rowLine = 1;
-  var carpetColors = ["#E4F1BD","#1957A3","#1993A3","#9119A3","#E29A26"];
+  var carpetColors = ["#E4F1BD", "#1957A3", "#1993A3", "#9119A3", "#E29A26"];
   var arrayCarpetX = [200, 330, 460, 200, 330, 460, 200, 330, 460];
   var arrayCarpetY = [12, 12, 12, 142, 142, 142, 271, 271, 271];
   var arrayRecursive = [0, 1, 1, 9, 81];
@@ -20,7 +20,7 @@
   var i = 0;
   var sierpinskiCarpet;
   var colectionCarpet = [];
-  var background = new Image();
+  const background = new Image();
 
   //object carpetSquare - pseudo-class
   var carpetSquare = function (positionx, positiony, widthsquare) {
@@ -466,7 +466,7 @@
     }
 
     cnv.font = "26px Arial Bold";
-    var textInfo = "ITERATION : "+iteration;
+    var textInfo = "ITERATION : " + iteration;
     cnv.fillStyle = "white";
     cnv.fillText(textInfo, 90, 435);
   };
