@@ -29,12 +29,14 @@
             cnv.font = this.font;
             cnv.fillStyle = this.color;
             cnv.fillText(this.text, this.originX, this.originY);
+            cnv.strokeStyle = "white";
+            cnv.strokeText(this.text, this.originX, this.originY);
         };
     };
 
     //Begin Code
     const canvasBackImage = new canvasBackground(backgroundDraw, 159, 800);
-    const infoText = new canvasText(450, 400, "BEM VINDO AO CANVAS", "yellow");
+    const infoText = new canvasText(450, 400, "BEM VINDO AO CANVAS", "#7bbcfc");
 
     window.onload = init();
 

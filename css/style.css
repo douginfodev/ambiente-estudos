@@ -5,105 +5,129 @@
   box-sizing: border-box;
 }
 
-:root{
- font-size: 62.5%; 
+:root {
+  --border-color: #7bbcfc;
+
+
+  font-size: 62.5%;
 }
 
-.wrapper{
-    display: flex;
-    width: 98%;
-    height:925px;
-    margin: 0 auto;
-  }
+.wrapper {
+  display: flex;
+  width: 98%;
+  height: 925px;
+  margin: 0 auto;
+  max-width: 1900px;
+}
 
-  body{
-   font-family: 'Courier New', Courier, monospace; 
-  }
+body {
+  font-family: 'Courier New', Courier, monospace;
+  border-color: var(--border-color);
+}
 
-  h1{
-    font-size: 3.5rem;
-  }
-   
-   main{
-    display:flex;
-    flex-direction: column;
-    width: 75%;
-    height:auto;
-    background-image: url('../images/bckcontainers.png');
-   }
+h1 {
+  font-size: 3.5rem;
+  color: #7bbcfc;
+}
 
-   aside{
-    width: 24%;
-    height:auto;
-    padding: 10px;
-    background-image: url('../images/bckcontainers1.png');
-   }
+main {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: auto;
+  background-image: url('../images/bckcontainers1.png');
+}
 
-   .canvas-display{
-    width: 100%;
-    height: 800px;
-    background-image: url('../images/bckblack.png');
-    border: 1px solid white;
-   }
+aside {
+  width: 24%;
+  height: auto;
+  padding: 10px;
+  border-left: 2px solid var(--border-color);
+  background-image: url('../images/bckcontainers.png');
+}
 
-   footer{
-    display: flex;
-    justify-content:space-around;
-    width: 99%;
-    height:130px;
-    margin: 10px;
-    background-image: url('../images/bckcontainers1.png');
-   }
+.canvas-display {
+  width: 100%;
+  height: 800px;
+  background-image: url('../images/bckblack.png');
+  border: 1px solid;
+  border-color: var(--border-color);
+}
 
-   .footer-channel{
-    display: flex;
-    width: 39%;
-    height: auto;  
-    
-    justify-content: center;
-    align-items: center;
-   }
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 99%;
+  height: 130px;
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  background-image: url('../images/bckgray.png');
+}
 
-   .footer-channel img{
-    
-    width: 99%;
-    height: auto;   
-   }
+.footer-channel {
+  display: flex;
+  width: 20%;
+  height: auto;
 
-   .footer-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px;
+  background-image: url('../images/bckcontainers1.png');
+  border-right: 2px solid;
+  border-right-color: var(--border-color);
+}
 
-    width: 50%;
-    height: auto;
-    margin-left: 10px;
-   }
+.footer-channel img {
+  width: 100%;
+  height: auto;
+}
 
-   .container-display{
-    width: 100%;
-    height: 300px;
-    margin-bottom: 10px;
-    background-image: url('../images/bckgray.png');
-   }
+.footer-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-   .container-tools{
-    width: 100%;
-    height: 450px;
-    background-image: url('../images/bckcontainers.png');
-    margin-bottom: 30px;
-   }
+  width: 80%;
+  height: auto;
+  margin-left: 10px;
+}
 
-   .container-socialmedia{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;   
-    width: 100%;
-    height: 123px;
-   }
+/* aside */
+.container-display {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 2px solid var(--border-color);
+  background-image: url('../images/bckblack.png');
+}
 
-   .socialmedia-logo{
-    width: 80px;
-    height: 79px;
-    margin: 5px;
-   }
+.container-tools {
+  width: 100%;
+  height: 480px;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 2px solid var(--border-color);
+  background-image: url('../images/bckcontainers1.png');
+  margin-bottom: 10px;
+}
+
+.container-socialmedia {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 105px;
+}
+
+.socialmedia-logo {
+  width: 50px;
+  height: 49px;
+  margin: 5px;
+}
+
+.socialmedia-logo img {
+  width: 100%;
+  height: auto;
+}
