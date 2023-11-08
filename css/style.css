@@ -8,6 +8,9 @@
 :root {
   --border-color: #7bbcfc;
 
+  --image-bck-fundo: url('../images/bckcontainers1.png');
+  --image-bck-containers: url('../images/bckcontainers.png');
+  --image-bck-containers1: url('../images/bckcontainers1.png');
 
   font-size: 62.5%;
 }
@@ -35,15 +38,15 @@ main {
   flex-direction: column;
   width: 75%;
   height: auto;
-  background-image: url('../images/bckcontainers1.png');
+  background-image: var(--image-bck-fundo);
 }
 
 aside {
   width: 24%;
   height: auto;
-  padding: 10px;
+  padding: 5px;
   border-left: 2px solid var(--border-color);
-  background-image: url('../images/bckcontainers.png');
+  background-image: var(--image-bck-containers);
 }
 
 .canvas-display {
@@ -73,7 +76,7 @@ footer {
   align-items: center;
   padding: 10px;
   margin-right: 10px;
-  background-image: url('../images/bckcontainers1.png');
+  background-image: var(--image-bck-containers1);
   border-right: 2px solid;
   border-right-color: var(--border-color);
 }
@@ -108,7 +111,7 @@ footer {
   height: 480px;
   border-radius: 10px 10px 0px 0px;
   border-bottom: 2px solid var(--border-color);
-  background-image: url('../images/bckcontainers1.png');
+  background-image: var(--image-bck-containers);
   margin-bottom: 10px;
 }
 
