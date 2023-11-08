@@ -39,10 +39,15 @@ h2 {
   color: #7bbcfc;
 }
 
-#line {
+ol{
+  width: 100%;
+  margin-left: 30px;
+}
+
+ol li {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
   font-size: 1.9rem;
-  color: #7bfcac;
+  color: #7bfcac;  
 }
 
 main {
@@ -96,6 +101,7 @@ footer {
 .footer-channel img {
   width: 100%;
   height: auto;
+  padding: 20px;
 }
 
 .footer-title {

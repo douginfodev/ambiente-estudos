@@ -2,6 +2,7 @@
     //Variables
     let ctx;  //context
     let cnv;  //canvas
+    let variables = ["Screen Width: 1920px", "Screen Height: 1080px"];
 
     //Initial backgound image
     let backgroundDraw = new Image();
@@ -40,9 +41,28 @@
 
     window.onload = init();
 
+    function startDisplay() {
+        let list = document.getElementById('list-display');
+
+        for (var lines = 0; lines < variables.length; lines++) {
+            let lineItem = document.createElement('li');
+
+            lineItem.appendChild(document.createTextNode(variables[lines]));
+            list.appendChild(lineItem);
+        }
+    };
+
     //Link html canvas element
     function init() {
         ctx = document.getElementById('mcanvas');
+
+        //consolLog[0].value = 'Screen Width: 1920px';
+        //consolLog[1].value = 'Screen Height: 1080px'; 
+        /*consolLog[2].Text = 'Canvas Width: 1200px';
+        consolLog[1].Text = 'Canvas Height: 810px'; 
+        consolLog[3].Text = 'hhfddjgkhk'; */
+
+
 
         if (ctx !== null) {
             cnv = ctx.getContext('2d');
@@ -56,6 +76,8 @@
             canvasBackImage.render();
             infoText.render();
         };
+
+        startDisplay();
     };
 
     //UPDATE
@@ -68,7 +90,7 @@
         cnv.fillStyle = "black";
         cnv.clearRect(0, 0, 1410, 800);
         canvasBackImage.render();
-        
+
         infoText.render();
     }
 
