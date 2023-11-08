@@ -39,6 +39,12 @@ h2 {
   color: #7bbcfc;
 }
 
+#line {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  font-size: 1.9rem;
+  color: #7bfcac;
+}
+
 main {
   display: flex;
   flex-direction: column;
